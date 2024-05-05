@@ -43,7 +43,7 @@ const lis: NavigationLink[] = [
 ]
 
 const Navbar = () => {
-  const [showText, setShowText] = useState<string>('');
+  const [showText, setShowText] = useState<boolean>();
   const onClick = () => setShowText(!showText);
 
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
