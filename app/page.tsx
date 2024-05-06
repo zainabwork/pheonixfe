@@ -13,10 +13,6 @@ import Faq from '../components/HomeComps/Faq';
 import faqGradient from '../public/HomeImgs/section-2/faq-gradient.png'
 import circleGrid from '../public/HomeImgs/section-2/circleGrid.png'
 import gradient from '../public/HomeImgs/gradient.png'
-import Swap from '@/components/Swap';
-import BridgeSwap from '@/components/BridgeSwap';
-import LeaderBoard from '@/components/LeaderBoard';
-import Launchpad from '@/components/Launchpad';
 
 
 export default function Home() {
