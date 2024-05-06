@@ -5,10 +5,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination,Autoplay } from 'swiper/modules';
 
-import slide1Img1 from '../public/section-2/slide1-img1.png'
-import slide1Img2 from '../public/section-2/slide1-img2.png'
-import slide1Img3 from '../public/section-2/slide1-img3.png'
-import slide1Img4 from '../public/section-2/slide1-img4.png'
+import slide1Img1 from '../../public/HomeImgs/section-2/slide1-img1.png'
+import slide1Img2 from '../../public/HomeImgs/section-2/slide1-img2.png'
+import slide1Img3 from '../../public/HomeImgs/section-2/slide1-img3.png'
+import slide1Img4 from '../../public/HomeImgs/section-2/slide1-img4.png'
 
 const HomeCarousel1 = () => {
     const slides=[
@@ -110,9 +110,9 @@ const HomeCarousel1 = () => {
   )
 }
 
-import slide2Img1 from '../public/section-2/slide2-img1.png';
-import slide2Img2 from '../public/section-2/slide2-img2.png';
-import {ArrowPath,StakeIcon} from '../components/Svgs'
+import slide2Img1 from '../../public/HomeImgs/section-2/slide2-img1.png';
+import slide2Img2 from '../../public/HomeImgs/section-2/slide2-img2.png';
+import {ArrowPath,StakeIcon} from '../../components/Svgs'
 
 const HomeCarousel2 = () => {
   const slides=[

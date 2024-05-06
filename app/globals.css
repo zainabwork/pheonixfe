@@ -144,3 +144,16 @@ body{
 
   }
 }
+
+.app-container {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack content vertically */
+  min-height: 100vh; /* Ensure container takes up full viewport height */
+}
+.footer {
+  justify-content: flex-end; /* Push footer to bottom */
+}
+
+.table_row1{
+  background-color: #4AC9FF;
+}

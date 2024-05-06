@@ -1,18 +1,23 @@
 import Image from 'next/image';
-import banner from '../public/banner-bg.png'
-import stars from '../public/stars.png'
-import line from '../public/line.svg'
-import laptop from '../public/Laptop.png'
-import grid from '../public/GridBG.png'
-import coins from '../public/section-2/coins.png'
-import {HomeCarousel1, HomeCarousel2} from '../components/HomeCarousel';
+import banner from '../public/HomeImgs/banner-bg.png'
+import stars from '../public/HomeImgs/stars.png'
+import line from '../public/HomeImgs/line.svg'
+import laptop from '../public/HomeImgs/Laptop.png'
+import grid from '../public/HomeImgs/GridBG.png'
+import coins from '../public/HomeImgs/section-2/coins.png'
+import {HomeCarousel1, HomeCarousel2} from '../components/HomeComps/HomeCarousel';
 import { TickIcon, GotoLinkIcon, DownArrowIcon } from '@/components/Svgs';
-import section3img from '../public/section-2/section3img.png';
-import roadmap from "../public/section-2/roadmap.png";
-import Faq from '../components/Faq';
-import faqGradient from '../public/section-2/faq-gradient.png'
-import circleGrid from '../public/section-2/circleGrid.png'
-import gradient from '../public/gradient.png'
+import section3img from '../public/HomeImgs/section-2/section3img.png';
+import roadmap from "../public/HomeImgs/section-2/roadmap.png";
+import Faq from '../components/HomeComps/Faq';
+import faqGradient from '../public/HomeImgs/section-2/faq-gradient.png'
+import circleGrid from '../public/HomeImgs/section-2/circleGrid.png'
+import gradient from '../public/HomeImgs/gradient.png'
+import Swap from '@/components/Swap';
+import BridgeSwap from '@/components/BridgeSwap';
+import LeaderBoard from '@/components/LeaderBoard';
+import Launchpad from '@/components/Launchpad';
+
 
 export default function Home() {
   const values=[
@@ -34,12 +39,12 @@ export default function Home() {
   ]
   return (
 <>
+  <main>
 <div className='relative h-[70rem] md:h-[50rem] pb-10 bg-cover w-full font-lorin'>
   <div className=''><Image src={stars} alt="banner image" layout="fill" objectFit="cover" /></div>
     <Image src={banner} alt="banner image" layout="fill" objectFit='contain' className='mt-40'/>
     <Image src={gradient} alt="banner image" layout="fill" objectFit="fill" />
 
-      {/* hero section starts here */}
       <section className='m-auto h-full relative '>
       <div className='text-center flex flex-col justify-center items-center h-auto w-2/3 md:w-[80%] absolute left-0 right-0 m-auto overflow-hidden top-44'>
         <p className="font-semibold text-6xl lg:text-4xl md:text-3xl">Everyone's Favorite DEX<br/>Pheonix Swap</p>
@@ -52,7 +57,6 @@ export default function Home() {
         <Image className='my-12' src={laptop} alt="laptop"></Image>
       </div>
       </section>
-      {/* hero section ends here */}
       
     </div>
     <div className='relative h-[40rem] md:h-[30rem] xs:h-[25rem] bg-cover w-full font-lorin'>
@@ -150,7 +154,7 @@ export default function Home() {
     </div>
     </section>
     </div>
-
+  </main>
 </>
   );
 }

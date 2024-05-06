@@ -1,7 +1,7 @@
 "use client"
 import React,{useState, useEffect} from 'react'
 
-import Logo from '../public/logo.png'
+import Logo from '../public/HomeImgs/logo.png'
 import Image from 'next/image';
 import {MenuIcon, CrossIcon, BinanceIcon, DownArrowIcon, SettingsIcon, GlobeIcon, PheonixIcon} from './Svgs'
 import Link from 'next/link';

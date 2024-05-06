@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         'Cpurple': '#8C67FF',
+        'Cpink' : '#E39AFF',
         'purple-gradients' : 'linear-gradient(251.38deg, #8DFAFF 0%, #00E0FF 99.76%)'
       },
     },

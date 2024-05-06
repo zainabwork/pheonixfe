@@ -19,8 +19,8 @@ export default function FooterComp() {
           <div>
             <Footer.Brand
               href="#"
-              src='./logo.png'
-              alt="Flowbite Logo"
+              src='./HomeImgs/logo.png'
+              alt="Pheonix Logo"
               name=""
             />
             <p className="my-2 text-xs">Join Everyone's Favorite DEX Now!</p>

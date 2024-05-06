@@ -28,10 +28,10 @@ export default function RootLayout({
       <head>
       <ThemeModeScript />
       </head>
-      <body className={inter.className}>
-        <Navbar/>
-        <main>{children}</main>
-        <Footer/>
+      <body className={`${inter.className}`} >
+          <Navbar/>
+          <main>{children}</main>
+          <Footer/>
       </body>
     </html>
     </>
