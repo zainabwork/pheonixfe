@@ -618,10 +618,10 @@ const Launchpad = () => {
             <Image src={gradient} alt="banner image" layout="fill" objectFit="fill" />
             
             <section className='m-auto h-full p-10 xs:p-5 '>
-                <div className='grid grid-cols-3 gap-10'>
+                <div className='grid grid-cols-3 gap-10 lg:gap-0 lg:grid-cols-1'>
                     <div className='col-span-1'>
                         <h1>Launchpad</h1>
-                        <div className="h-[64%] scroll-smooth overflow-y-auto my-5 border border-gray-700 backdrop-filter backdrop-blur-md bg-white bg-opacity-[3%] rounded-3xl p-4">
+                        <div className="h-[64%] lg:h-full scroll-smooth overflow-y-auto my-5 border border-gray-700 backdrop-filter backdrop-blur-md bg-white bg-opacity-[3%] rounded-3xl p-4">
                             {LaunchpadIDOs.map((ido:LaunchpadIDOs)=>(
                             <div key={ido.name} onClick={() => handleIdoClick([ido])} className={`${ido.isSelected? "border border-green-700":"border border-gray-700" }  rounded-xl p-1 flex gap-3 relative my-2 ${
                                 ido.type ? "cursor-pointer" : "opacity-50" }`}>
@@ -637,7 +637,7 @@ const Launchpad = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='col-span-2'>
+                    <div className='col-span-2 lg:mt-20'>
                         <h1>Details</h1>
                         <LaunchpadDetails ido={selectedIdo}/>
                     </div>

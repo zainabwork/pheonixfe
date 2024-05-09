@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination,Autoplay } from 'swiper/modules';
-
+import cardBorder from '../../public/HomeImgs/carousel-border.png'
 import slide1Img1 from '../../public/HomeImgs/section-2/slide1-img1.png'
 import slide1Img2 from '../../public/HomeImgs/section-2/slide1-img2.png'
 import slide1Img3 from '../../public/HomeImgs/section-2/slide1-img3.png'
@@ -91,7 +91,8 @@ return (
     >
       {slides.map((slide)=>(
           <SwiperSlide className=''>
-          <div className='min-h-[15rem] relative text-left rounded-tr-3xl rounded-lg border border-Cpurple bg-transparent '>
+
+          <div className='min-h-[15rem] relative text-left rounded-tr-3xl rounded-lg  bg-transparent try_border'>
               <div className='p-4'>
                   <p className='text-2xl sm:text-sm my-5'>{slide.title}</p>
                   <p className='text-sm sm:text-xs'>{slide.description}</p>

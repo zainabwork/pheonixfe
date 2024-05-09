@@ -68,7 +68,7 @@ const LaunchpadDetails= ({ido}:{ido:LaunchpadIDOs}) => {
         <div className='my-5 border border-gray-700 backdrop-filter backdrop-blur-md bg-white bg-opacity-[3%] rounded-3xl p-4'>
             <h1>Participate</h1>
             <div className='my-5'>
-                <div className='flex justify-between w-1/2 text-sm text-gray-500 my-2'><p>Amount</p><p>Your contribution: <span className='text-white'>{ido?.details.amount}</span> SKY</p></div>
+                <div className='flex justify-between w-1/2 sm:w-full text-sm text-gray-500 my-2'><p>Amount</p><p>Your contribution: <span className='text-white'>{ido?.details.amount}</span> SKY</p></div>
                 <div className='flex gap-2 items-center'>
                 <div className="relative w-full">
                     <input className="block p-2.5 w-full text-sm text-white bg-transparent rounded-2xl border border-gray-700 focus:ring-blue-500 focus:border-blue-500" value={`${ido?.details.amount} PNX`} />
@@ -78,11 +78,11 @@ const LaunchpadDetails= ({ido}:{ido:LaunchpadIDOs}) => {
                 </div>
                 <div className='my-5'>
                     {/* starting  */}                    
-                    <ol className="flex items-center">
+                    <ol className="flex items-center sm:flex-col">
                         {ido?.details.indicatorsData.map((indicator)=>(
                             <li className="relative w-full mb-6">
                             <div className="flex items-center">
-                                <div className={`${indicator.done? "bg-[#CB3BA8]" : "bg-black"} z-10 flex items-center justify-center w-6 h-6  rounded-full ring-0 ring-white sm:ring-8 shrink-0`} >
+                                <div className={`${indicator.done? "bg-[#CB3BA8]" : "bg-black"} z-10 flex items-center justify-center w-6 h-6  rounded-full ring-0 ring-white shrink-0`} >
                                     <BlackTickIcon/>
                                 </div>
                                 <div className={`${indicator.done? "bg-[#CB3BA8]" : "bg-gray-700"} flex w-full h-0.5`}></div>

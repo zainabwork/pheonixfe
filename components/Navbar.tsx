@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
         </div>
             {/* <button className='gradient_border text-sm p-1 w-40 md:w-60 xs:text-[10px] xs:w-60 xs:h-10 h-12 mr-5 lg:mr-20'>Connect Wallet</button> */}
-            <CustomConnectBtn styling={"gradient_border text-sm p-1 w-40 md:w-60 xs:text-[10px] xs:w-60 xs:h-10 h-12 mr-5 lg:mr-20"} />
+            <CustomConnectBtn styling={" gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 lg:mr-20 sm:mr-16"} />
     </nav>
     {showText ? <Text /> : null}
     </>

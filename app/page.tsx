@@ -14,7 +14,6 @@ import faqGradient from '../public/HomeImgs/section-2/faq-gradient.png'
 import circleGrid from '../public/HomeImgs/section-2/circleGrid.png'
 import gradient from '../public/HomeImgs/gradient.png'
 
-
 export default function Home() {
   const values=[
     {
@@ -47,8 +46,8 @@ export default function Home() {
         <div className='-mt-2'><Image src={line} alt="vector" className='lg:w-2/3 m-auto'></Image></div>
         <p className=" text-xl py-6 md:text-sm">Trade, earn, and own crypto on the all-in-one multichain DEX</p>
         <div className='m-auto flex gap-2 py-5'>
-          <button className="button text-black bg-white">Get Started</button>
-          <button className='button border-2'>Trade Now</button>
+          <button className="button home_btn2 bg-white">Get Started</button>
+          <button className='button home_btn2'>Trade Now</button>
         </div>
         <Image className='my-12' src={laptop} alt="laptop"></Image>
       </div>
