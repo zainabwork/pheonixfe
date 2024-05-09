@@ -39,7 +39,7 @@ export default function Home() {
 <div className='relative h-[70rem] md:h-[50rem] pb-10 bg-cover w-full font-lorin'>
   <div className=''><Image src={stars} alt="banner image" layout="fill" objectFit="cover" /></div>
     <Image src={banner} alt="banner image" layout="fill" objectFit='contain' className='mt-40'/>
-    <Image src={gradient} alt="banner image" layout="fill" objectFit="fill" />
+    <Image src={gradient} alt="banner image" layout="fill" objectFit="fill"/>
 
       <section className='m-auto h-full relative '>
       <div className='text-center flex flex-col justify-center items-center h-auto w-2/3 md:w-[80%] absolute left-0 right-0 m-auto overflow-hidden top-44'>
@@ -94,7 +94,7 @@ export default function Home() {
             <div className='flex gap-2 items-center'>
               <TickIcon/><span>Explore more</span>
             </div>
-            <div><button className='button rounded-tr-3xl rounded-lg border border-Cpurple'>Buy PNX</button></div>
+            <div><button className='button rounded-tr-3xl rounded-lg gradient_border'>Buy PNX</button></div>
           </div>
         </div>
         <div>
@@ -108,8 +108,8 @@ export default function Home() {
         <div className='col-span-1'>
           <h1 className='text-4xl md:text-2xl sm:text-xl'>Unlock the Power of DeFi with <span className='text-Cpurple'>PNX</span></h1>
           <p className='my-5 sm:text-sm'>Experience the power of community ownership, global governance, and explore infinite use cases within the PancakeSwap ecosystem</p>
-          <div className='flex gap-10'>
-            <button className='button border border-Cpurple rounded-tr-3xl'>Buy PNX</button>
+          <div className='flex '>
+            <button className='button gradient_border rounded-tr-3xl'>Buy PNX</button>
 
             <button className='flex items-center gap-1 button'>Learn <GotoLinkIcon/></button></div>
         </div>
@@ -124,7 +124,7 @@ export default function Home() {
       <div className='my-16 sm:my-5'>
         <Image src={roadmap} alt="Roadmap" className='m-auto'></Image>
       </div>
-      <button className='button m-auto flex items-center gap-1 border border-Cpurple'>See More <DownArrowIcon/></button>
+      <button className='button m-auto flex items-center gap-1 gradient_border'>See More <DownArrowIcon/></button>
     </section>
 
     <div className='relative h-auto bg-cover w-full font-lorin'>
@@ -142,6 +142,8 @@ export default function Home() {
 
     <div className='relative h-screen sm:h-[20rem] bg-cover w-full font-lorin'>
     <Image src={gradient} alt="banner image" layout="fill" objectFit="contain" className=''/>
+    <Image src={gradient} alt="banner image" layout="fill" objectFit="contain" className=''/>
+
     <Image src={circleGrid} alt="banner image" layout="fill" objectFit="contain" className=''/>
     <section className='font-lorin my-20 relative'>
     <div className='text-center flex flex-col justify-center items-center h-auto w-2/3 absolute left-0 right-0 m-auto overflow-hidden top-52 sm:top-20'>

@@ -124,5 +124,22 @@ const StarsIcon = () =>{
 
   )
 }
-export {TickIcon,GotoLinkIcon, ArrowPath, StakeIcon, DownArrowIcon, PheonixIcon, GlobeIcon, MenuIcon, CrossIcon, BinanceIcon, SettingsIcon, WalletIcon, StarsIcon}
+
+const LinkIcon = () =>{
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+</svg>
+
+  )
+}
+
+const BlackTickIcon = () =>{
+  return(
+    <svg className="w-2.5 h-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+    </svg>
+  )
+}
+export {TickIcon,GotoLinkIcon, ArrowPath, StakeIcon, DownArrowIcon, PheonixIcon, GlobeIcon, MenuIcon, CrossIcon, BinanceIcon, SettingsIcon, WalletIcon, StarsIcon, LinkIcon, BlackTickIcon}
  

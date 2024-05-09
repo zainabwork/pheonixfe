@@ -24,7 +24,7 @@ export default function FooterComp() {
               name=""
             />
             <p className="my-2 text-xs">Join Everyone's Favorite DEX Now!</p>
-            <div className="sm:mt-4 flex space-x-6  text-white my-5">
+            <div className="sm:mt-4 flex space-x-3 text-white my-5">
               {socialMediaIcons.map((icon)=>(
                 <Footer.Icon href="#" className="text-white" icon={icon} />
               ))}
@@ -39,7 +39,7 @@ export default function FooterComp() {
               <Footer.Title title={section.title} className="text-white" />
               <Footer.LinkGroup col>
                 {section.links.map((link) => (
-                  <Footer.Link key={link} href="#">{link}</Footer.Link>
+                  <Footer.Link key={link} href="#" className="text-white text-xs">{link}</Footer.Link>
                 ))}
                 </Footer.LinkGroup>
               </div>
@@ -54,7 +54,7 @@ export default function FooterComp() {
             <button className="button bg-white text-black">White Paper</button>
             <p className="flex gap-1 items-center"><GlobeIcon/>EN</p>
             <p className="flex gap-1 items-center"><PheonixIcon/> $1.15</p>
-            <button className="button border border-Cpurple">Buy PNX</button>
+            <button className="button gradient_border">Buy PNX</button>
           </div>
         </div>
       </div>

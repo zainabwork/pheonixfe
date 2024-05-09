@@ -1,6 +1,6 @@
-import { TableDataItem } from '@/Interfaces'
+import { LeaderboardTableDataItem, TypeLeaderboardTableDataProps } from '@/Interfaces'
 
-const TableData: React.FC<TableDataProps> = (props) => {
+const LeaderboardTableData: React.FC<TypeLeaderboardTableDataProps> = (props) => {
 
   return (
     <>
@@ -13,7 +13,7 @@ const TableData: React.FC<TableDataProps> = (props) => {
                         <th className='p-4'>Trades (USD)</th>
                         <th className='p-4 rounded-tr-3xl'>Rewards (PNX)</th>
                     </tr>
-                    {props.tableData.map((item:TableDataItem, index:number) => (
+                    {props.leaderboardTableData.map((item:LeaderboardTableDataItem, index:number) => (
                         <tr key={index} className="text-center">
                             <td className="p-4">
                             {typeof item.rank === 'string' ? item.rank : index + 1}
@@ -29,7 +29,5 @@ const TableData: React.FC<TableDataProps> = (props) => {
     </>
   )
 }
-type TableDataProps = {
-    tableData: TableDataItem[]; // Array of table data objects
-  };
-export default TableData
+
+export default LeaderboardTableData

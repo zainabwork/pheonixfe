@@ -4,14 +4,14 @@ import Image from 'next/image'
 import { StarsIcon } from '../../components/Svgs'
 import Timer from '../../components/Timer'
 import { useState } from 'react'
-import TableData from '../../components/TableData'
-import { TableDataItem } from '@/Interfaces'
+import TableData from '../../components/LeaderboardTableData'
+import { LeaderboardTableDataItem } from '@/Interfaces'
 
 
 const LeaderBoard = () => {
 
     const value:string= "0x5F3Eb2D6AeC7C1B9Fe6cew6d";
-    const DailyTableData: TableDataItem[]= [
+    const DailyTableData: LeaderboardTableDataItem[]= [
         {
           rank: "🥇",
           address: '0x8C01B7D3B2A4eF5c6D4b3A2E1f0b9E8D7C6B5A4D',
@@ -47,7 +47,7 @@ const LeaderBoard = () => {
             rewards: 35000,
         }
       ];
-      const WeeklyTableData:TableDataItem[] = [
+      const WeeklyTableData:LeaderboardTableDataItem[] = [
         {
           rank: "🥇",
           address: '0x8C01B7D3B2A4eF5c6D4b3A2E1f0b9E8D7C6B5A4D',
@@ -113,7 +113,7 @@ const LeaderBoard = () => {
             rewards: 35000,
         }
       ];
-      const AllTimeTableData:TableDataItem[] = [
+      const AllTimeTableData:LeaderboardTableDataItem[] = [
         {
           rank: "🥇",
           address: '0x8C01B7D3B2Aergtert546546E1f0b9E8D7C6B5A4D',
@@ -179,9 +179,9 @@ const LeaderBoard = () => {
                 <button className={`rounded-full p-2  px-6 ${activeButton === 'Weekly' ? 'bg-opacity-[10%] bg-white border border-gray-500' : ''}`} onClick={() => handleClick('Weekly')}>Weekly</button>
                 <button className={`rounded-full p-2 px-6 ${activeButton === 'AllTime' ? 'bg-opacity-[10%] bg-white border border-gray-500' : ''}`} onClick={() => handleClick('AllTime')}>All Time</button>
             </div>
-            {activeButton === 'Daily' && <TableData tableData={DailyTableData}/>}
-            {activeButton === 'Weekly' && <TableData tableData={WeeklyTableData}/>}
-            {activeButton === 'AllTime' && <TableData tableData={AllTimeTableData}/>}
+            {activeButton === 'Daily' && <TableData leaderboardTableData={DailyTableData}/>}
+            {activeButton === 'Weekly' && <TableData leaderboardTableData={WeeklyTableData}/>}
+            {activeButton === 'AllTime' && <TableData leaderboardTableData={AllTimeTableData}/>}
 
         </section>
       

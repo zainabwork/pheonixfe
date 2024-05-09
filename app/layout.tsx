@@ -5,7 +5,8 @@ import "./globals.css";
 import { ThemeModeScript } from "flowbite-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import '@rainbow-me/rainbowkit/styles.css';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,9 +30,11 @@ export default function RootLayout({
       <ThemeModeScript />
       </head>
       <body className={`${inter.className}`} >
+        <Providers>
           <Navbar/>
           <main>{children}</main>
           <Footer/>
+        </Providers>
       </body>
     </html>
     </>

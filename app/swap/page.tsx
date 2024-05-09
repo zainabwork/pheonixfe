@@ -1,14 +1,18 @@
+"use client"
 import React from 'react'
 
 import { SettingsIcon, WalletIcon } from '../../components/Svgs'
-import usdt from '../../public/swap/usdt.png'
+import usdt from '../../public/swap/usdt.png';
 import bnb from '../../public/swap/bnb.png';
 import downArrow from '../../public/swap/down-arrow.png'
 import Image from 'next/image'
 import stars from '../../public/HomeImgs/stars.png'
 import gradient from '../../public/HomeImgs/gradient.png'
+import CustomConnectBtn from '@/components/CustomConnectBtn';
+
 
 const Swap = () => {
+
   return (
     <>
 
@@ -40,6 +44,7 @@ const Swap = () => {
                             </select>
                             <p className='absolute bottom-0 text-[8px] left-[60px] text-Cpink'>Tether USDT</p>
                         </div>
+                        
                         <div className='text-xs text-right'><p>1000</p><p className='text-Cpink'>≈ $1,000</p></div>
                     </div>
                 <Image src={downArrow} alt="down arrow image" className='absolute -bottom-9 left-0 right-0 m-auto'></Image>
@@ -69,7 +74,9 @@ const Swap = () => {
                 <select className='w-full bg-black rounded-sm text-sm'>
                     <option>1 USDT ≈ 0.00352354 BNB</option>
                 </select>
-                <button className='my-5 w-full button bg-white text-black flex justify-center gap-2'><WalletIcon/>Connect Wallet</button>
+                {/* <button className='my-5 w-full button bg-white text-black flex justify-center gap-2'><WalletIcon/>Connect Wallet</button> */}
+                <CustomConnectBtn styling={"my-5 w-full button bg-white text-black flex justify-center gap-2"}/>
+
             </div>
         </section>
         </div>
