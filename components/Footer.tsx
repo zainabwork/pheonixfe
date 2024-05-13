@@ -51,10 +51,10 @@ export default function FooterComp() {
         <div className="w-full flex flex-wrap items-center justify-between">
           <Footer.Copyright href="#" by="PhonixSwap" year={2024} />
           <div className="sm:mt-4 flex flex-wrap gap-2 space-x-6 mt-0 justify-center sm:justify-normal">
-            <button className="home_btn2 sm:h-10 bg-white ">White Paper</button>
+            <button className="home_btn2 bg-white button">White Paper</button>
             <p className="flex gap-1 items-center"><GlobeIcon/>EN</p>
             <p className="flex gap-1 items-center"><PheonixIcon/> $1.15</p>
-            <button className="button  sm:h-10 gradient_border">Buy PNX</button>
+            <button className="button sm:h-10 gradient_border sm:home_btn2">Buy PNX</button>
           </div>
         </div>
       </div>

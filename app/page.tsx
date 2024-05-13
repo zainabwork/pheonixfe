@@ -48,7 +48,7 @@ export default function Home() {
         <div className='-mt-2'><Image src={line} alt="vector" className='lg:w-2/3 m-auto'></Image></div>
         <p className=" text-xl py-6 md:text-sm">Trade, earn, and own crypto on the all-in-one multichain DEX</p>
         <div className='m-auto flex gap-2 py-5'>
-          <button className="button home_btn2 bg-white">Get Started</button>
+          <button className="button home_btn2 ">Get Started</button>
           <button className='button home_btn2'>Trade Now</button>
         </div>
         <ReadContract/>
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
       
     </div>
-    <div className='relative h-[40rem] md:h-[30rem] xs:h-[25rem] bg-cover w-full font-lorin'>
+    <div className='relative h-[50rem] mt-[10rem] xl:mt-[5rem] sm:mt-0 xl:h-[40rem] md:h-[30rem] xs:h-[25rem] bg-cover w-full font-lorin'>
     <Image src={grid} alt="banner image" layout="fill" objectFit="contain" className='mt-20'/>
     <section className='m-auto h-full relative px-20 md:px-10 sm:px-2'>
       <h1 className='text-center text-4xl md:text-2xl sm:text-xl'>Shaping the Future of Decentralized Trading:<br className='sm:hidden'/>PheonixSwap Unstoppable Expansion</h1>
@@ -76,7 +76,7 @@ export default function Home() {
     </div>
 
     <section className='font-lorin'>
-      <h1 className='text-center text-4xl md:text-2xl sm:text-xl'>Discover The Ecosystem</h1>
+      <h1 className='text-center text-4xl md:text-2xl sm:text-xl xs:mt-[5rem]'>Discover The Ecosystem</h1>
       <div className='pl-10 sm:pl-10 sm:px-10 my-16'>
           <HomeCarousel1/>
       </div>
@@ -97,7 +97,7 @@ export default function Home() {
             <div className='flex gap-2 items-center'>
               <TickIcon/><span>Explore more</span>
             </div>
-            <div><button className='button rounded-tr-3xl rounded-lg gradient_border'>Buy PNX</button></div>
+            <div><button className='button rounded-lg gradient_border'>Buy PNX</button></div>
           </div>
         </div>
         <div>
@@ -111,7 +111,7 @@ export default function Home() {
         <div className='col-span-1'>
           <h1 className='text-4xl md:text-2xl sm:text-xl'>Unlock the Power of DeFi with <span className='text-Cpurple'>PNX</span></h1>
           <p className='my-5 sm:text-sm'>Experience the power of community ownership, global governance, and explore infinite use cases within the PancakeSwap ecosystem</p>
-          <div className='flex '>
+          <div className='flex sm:flex-col sm:items-center'>
             <button className='button gradient_border rounded-tr-3xl'>Buy PNX</button>
 
             <button className='flex items-center gap-1 button'>Learn <GotoLinkIcon/></button></div>
@@ -127,7 +127,7 @@ export default function Home() {
       <div className='my-16 sm:my-5'>
         <Image src={roadmap} alt="Roadmap" className='m-auto'></Image>
       </div>
-      <button className='button m-auto flex items-center gap-1 gradient_border'>See More <DownArrowIcon/></button>
+      <div className='flex flex-col justify-center'><button className='button gradient_border rounded-tr-3xl m-auto'><p className='flex items-center justify-center'>See More <DownArrowIcon/></p></button></div>
     </section>
 
     <div className='relative h-auto bg-cover w-full font-lorin'>
@@ -148,7 +148,7 @@ export default function Home() {
     <Image src={gradient} alt="banner image" layout="fill" objectFit="contain" className=''/>
 
     <Image src={circleGrid} alt="banner image" layout="fill" objectFit="contain" className=''/>
-    <section className='font-lorin my-20 relative'>
+    <section className='font-lorin my-20 2xl:my-10 relative'>
     <div className='text-center flex flex-col justify-center items-center h-auto w-2/3 absolute left-0 right-0 m-auto overflow-hidden top-52 sm:top-20'>
         <p className="text-6xl md:text-3xl sm:text-xl">Be a part of the future of <br className='xs:hidden'/>PheonixSwap</p>
         <div className='-mt-2'><Image src={line} alt="vector" className='lg:w-2/3 m-auto'></Image></div>

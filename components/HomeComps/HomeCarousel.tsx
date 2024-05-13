@@ -92,7 +92,7 @@ return (
       {slides.map((slide)=>(
           <SwiperSlide className=''>
 
-          <div className='min-h-[15rem] relative text-left rounded-tr-3xl rounded-lg  bg-transparent try_border'>
+          <div className='min-h-[15rem] relative text-left rounded-tr-3xl rounded-lg  bg-transparent xs:border-r-2 xs:border-[#4B588D] border-b-2 border-[#4B588D] rounded-bl-3xl try_border'>
               <div className='p-4'>
                   <p className='text-2xl sm:text-sm my-5'>{slide.title}</p>
                   <p className='text-sm sm:text-xs'>{slide.description}</p>

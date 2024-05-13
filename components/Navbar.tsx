@@ -87,21 +87,21 @@ const Navbar = () => {
         <nav className={`nav_wrapper items-center font-lorin w-full ${
         isScrolled ? "bg_nav" : "bg_none"
       } xl:h-[90px]`}>
-<button className='hidden lg:block' onClick={onClick}>
+<button className='hidden xl:block' onClick={onClick}>
     {showText? <MenuIcon/> : <CrossIcon/> }
     </button>
 
         <div className='flex justify-between w-full items-center'>
             <div className='flex-shrink-0 xs:w-36'><Image src={Logo} alt="logo" ></Image></div>
-            <div className='2xl:block lg:hidden'>
+            <div className='2xl:block xl:hidden'>
                 <ul className='flex text-nowrap gap-7 md:gap-3 items-center w-full text-sm'>
                 {lis.map((li)=>(
                     <Link href={li.link}><li key={li.title}>{li.title}</li></Link>
                 ))}
                 </ul>
             </div>
-            <div className='lg:hidden'>
-            <ul className='flex gap-1 flex-row-reverse items-center'>
+            <div className='lg:hidden flex flex-shrink-0'>
+            <ul className='flex gap-1 flex-row-reverse items-center text-nowrap'>
                     <li className=''>
                     <Select 
                         options={options} 
@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
         </div>
             {/* <button className='gradient_border text-sm p-1 w-40 md:w-60 xs:text-[10px] xs:w-60 xs:h-10 h-12 mr-5 lg:mr-20'>Connect Wallet</button> */}
-            <CustomConnectBtn styling={"md:hidden gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 lg:mr-20 sm:mr-16"} />
+            <CustomConnectBtn styling={"md:hidden gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 xl:mr-20 sm:mr-16"} />
     </nav>
     {showText ? <Text /> : null}
     </>
@@ -128,7 +128,7 @@ const Navbar = () => {
 function Text(){
     return(
         <>
-          <div className='overflow-auto side_bar lg:block bg-black text-white top-20 right-0 absolute p-5 h-auto w-1/3 md:w-1/2 sm:w-[80%] z-50 rounded-lg'>
+          <div className='overflow-auto side_bar xl:block bg-black text-white top-20 right-0 absolute p-5 h-auto w-1/3 md:w-1/2 sm:w-[80%] z-50 rounded-lg'>
           <div>
           <ul>
             {lis.map((li)=>(
@@ -147,7 +147,7 @@ function Text(){
                     <li className='my-2'><SettingsIcon/></li>
                     <li className='my-2'><GlobeIcon/></li>
                     <li className="flex gap-1 items-center my-2"><PheonixIcon/> $1.15</li>
-                    <li><CustomConnectBtn styling={"gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 lg:mr-20 sm:mr-16 hidden sm:bloack"} /></li>
+                    <li><CustomConnectBtn styling={"gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] hidden md:block"} /></li>
 
                     </ul>
                   </li>

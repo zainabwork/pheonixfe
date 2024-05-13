@@ -15,7 +15,7 @@ export default function WriteContractComp() {
 
   return (
     <button
-      className="border-2"
+      className="border-2 px-2"
       onClick={async () => {
         try {
             await writeContractAsync({

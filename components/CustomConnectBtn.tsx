@@ -49,7 +49,7 @@ const CustomConnectBtn = ({styling}:{styling:string}) => {
                 );
               }
               return (
-                <div style={{ display: 'flex', gap: 12 }}>
+                <div style={{ display: 'flex', gap: 12 ,}} className='md:w-0 md:-mr-2'>
                   <button 
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}
@@ -77,7 +77,7 @@ const CustomConnectBtn = ({styling}:{styling:string}) => {
                     )}
                     {chain.name}
                   </button>
-                  <button className='mr-16 text-wrap' onClick={openAccountModal} type="button">
+                  <button className={`xl:mr-16 text-nowrap`} onClick={openAccountModal} type="button">
                     {account.displayName}
                     {account.displayBalance
                       ? ` (${account.displayBalance})`
