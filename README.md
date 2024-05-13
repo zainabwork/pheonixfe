@@ -1,3 +1,7 @@
+## Contract deployed (used in project)
+**contract id:** 0x5A6034D4B34FbaA937F1E5d4A8Ea8820A683D2e9
+
+
 ## Contract using [webiste](https://www.smartcontracts.tools/token-generator/create/ethereum/)
 
 **contract address:** 0x158116a4fb533ba4e694d63eb1ca69d1180a854c
