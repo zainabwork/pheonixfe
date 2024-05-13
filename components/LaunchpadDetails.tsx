@@ -39,6 +39,7 @@ const LaunchpadDetails= ({ido}:{ido:LaunchpadIDOs}) => {
                 <p className='my-2 text-xs text-gray-500'>Ends in:</p>
                 <div><LaunchpadTimer deadlineString={ido?.details.endsIn} unit={unit}/></div>
             </div>
+            
             <div className='relative'>
                 <div className="flex justify-between mb-2">
                     <span className="text-sm">{ido?.details.tokenSupply} / 2,000,000 SKY</span>

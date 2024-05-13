@@ -100,7 +100,7 @@ const Navbar = () => {
                 ))}
                 </ul>
             </div>
-            <div className='md:hidden'>
+            <div className='lg:hidden'>
             <ul className='flex gap-1 flex-row-reverse items-center'>
                     <li className=''>
                     <Select 
@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
         </div>
             {/* <button className='gradient_border text-sm p-1 w-40 md:w-60 xs:text-[10px] xs:w-60 xs:h-10 h-12 mr-5 lg:mr-20'>Connect Wallet</button> */}
-            <CustomConnectBtn styling={" gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 lg:mr-20 sm:mr-16"} />
+            <CustomConnectBtn styling={"md:hidden gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 lg:mr-20 sm:mr-16"} />
     </nav>
     {showText ? <Text /> : null}
     </>
@@ -128,14 +128,14 @@ const Navbar = () => {
 function Text(){
     return(
         <>
-          <div className='side_bar lg:block bg-black text-white top-20 right-0 absolute p-5 h-auto w-1/3 md:w-1/2 sm:w-[80%] z-50 rounded-lg'>
+          <div className='overflow-auto side_bar lg:block bg-black text-white top-20 right-0 absolute p-5 h-auto w-1/3 md:w-1/2 sm:w-[80%] z-50 rounded-lg'>
           <div>
           <ul>
             {lis.map((li)=>(
               <Link href={li.link}><li className='py-2'>{li.title}</li></Link>
             ))}
             <li>
-                    <ul className='hidden md:block'>
+                    <ul className='hidden lg:block'>
                     <li className='my-2'>
                     <Select className='w-24'
                         options={options} 
@@ -147,6 +147,8 @@ function Text(){
                     <li className='my-2'><SettingsIcon/></li>
                     <li className='my-2'><GlobeIcon/></li>
                     <li className="flex gap-1 items-center my-2"><PheonixIcon/> $1.15</li>
+                    <li><CustomConnectBtn styling={"gradient_border text-sm p-1 w-40 md:w-40 xs:text-[10px] xs:w-32 xs:h-10 h-12 mr-5 lg:mr-20 sm:mr-16 hidden sm:bloack"} /></li>
+
                     </ul>
                   </li>
           </ul>

@@ -13,6 +13,8 @@ import Faq from '../components/HomeComps/Faq';
 import faqGradient from '../public/HomeImgs/section-2/faq-gradient.png'
 import circleGrid from '../public/HomeImgs/section-2/circleGrid.png'
 import gradient from '../public/HomeImgs/gradient.png'
+import ReadContract from '@/components/ReadContract';
+import WriteContractComp from '@/components/WriteContract';
 
 export default function Home() {
   const values=[
@@ -49,6 +51,8 @@ export default function Home() {
           <button className="button home_btn2 bg-white">Get Started</button>
           <button className='button home_btn2'>Trade Now</button>
         </div>
+        <ReadContract/>
+        <WriteContractComp/>
         <Image className='my-12' src={laptop} alt="laptop"></Image>
       </div>
       </section>
