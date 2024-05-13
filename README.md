@@ -1,6 +1,7 @@
 ## Contract deployed (used in project)
 **contract id:** 0x5A6034D4B34FbaA937F1E5d4A8Ea8820A683D2e9
 
+library used to convert wei to eth [here](https://www.npmjs.com/package/ethereum-unit-converter)
 
 ## Contract using [webiste](https://www.smartcontracts.tools/token-generator/create/ethereum/)
 
