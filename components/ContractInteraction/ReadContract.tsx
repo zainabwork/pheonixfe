@@ -8,7 +8,7 @@ export default function ReadContract() {
 
   const { data: balance, error } = useReadContract({
     abi,
-    address: "0x158116a4fb533ba4e694d63eb1ca69d1180a854c",
+    address: "0x5A6034D4B34FbaA937F1E5d4A8Ea8820A683D2e9",
     functionName: "totalSupply",
     // args: ['0xfBad43ce91d5968E272EF0dc159bDdC7F9e3Db9d'],
   });

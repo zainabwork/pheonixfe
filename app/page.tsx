@@ -16,6 +16,7 @@ import gradient from '../public/HomeImgs/gradient.png'
 import ReadContract from '@/components/ContractInteraction/ReadContract';
 import WriteContractComp from '@/components/ContractInteraction/WriteContract';
 
+
 export default function Home() {
   const values=[
     {
@@ -53,6 +54,7 @@ export default function Home() {
         </div>
         <ReadContract/>
         <WriteContractComp/>
+        
         <Image className='my-12' src={laptop} alt="laptop"></Image>
       </div>
       </section>
